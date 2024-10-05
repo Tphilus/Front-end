@@ -1,7 +1,4 @@
-import UseStateGotcha from "./hooks/useState/05-useState-gotcha";
-
-
-
+import ShortCircuitOverview from "./hooks/conditional-rendering/04-short-circuit-overview";
 
 function App() {
   return (
@@ -11,7 +8,18 @@ function App() {
       {/* <UseStateBasics /> */}
       {/* <UseStateArray /> */}
       {/* <UseStateObject /> */}
-      <UseStateGotcha />
+      {/* <UseStateGotcha /> */}
+
+      {/* useEffect  */}
+      {/* <UseEffectBasics /> */}
+      {/* <Multipl// import MultipleEffects from "./hooks/useEffect/03-multiple-effects"eEffects /> */}
+      {/* <FetchData /> */}
+
+      {/* conditional rendring  */}
+      {/* <MultipleReturnsBasics /> */}
+      {/* <MultipleReturnsFetchData /> */}
+      {/* <Example /> */}
+      <ShortCircuitOverview />
     </div>
   );
 }
