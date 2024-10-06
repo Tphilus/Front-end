@@ -1,3 +1,4 @@
+import List from "./components/05-leverage-javascript/List";
 import ShortCircuitOverview from "./hooks/conditional-rendering/04-short-circuit-overview";
 import ShortCircuitExamples from "./hooks/conditional-rendering/05-short-circuit-examples";
 import ToggleChallenge from "./hooks/conditional-rendering/06-toggle-challenge";
@@ -15,17 +16,17 @@ function App() {
 
       {/* useEffect  */}
       {/* <UseEffectBasics /> */}
-      {/* <Multipl// import MultipleEffects from "./hooks/useEffect/03-multiple-effects"eEffects /> */}
+      {/* <Multiply// import MultipleEffects from "./hooks/useEffect/03-multiple-effects"eEffects /> */}
       {/* <FetchData /> */}
 
-      {/* conditional rendring  */}
+      {/* conditional rending  */}
       {/* <MultipleReturnsBasics /> */}
       {/* <MultipleReturnsFetchData /> */}
       {/* <Example /> */}
       {/* <ShortCircuitOverview /> */}
       {/* <ShortCircuitExamples /> */}
       {/* <ToggleChallenge /> */}
-      <UserChallenge />
+      <List />
     </div>
   );
 }
