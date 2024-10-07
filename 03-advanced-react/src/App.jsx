@@ -1,8 +1,5 @@
-import List from "./components/05-leverage-javascript/List";
-import ShortCircuitOverview from "./hooks/conditional-rendering/04-short-circuit-overview";
-import ShortCircuitExamples from "./hooks/conditional-rendering/05-short-circuit-examples";
-import ToggleChallenge from "./hooks/conditional-rendering/06-toggle-challenge";
-import UserChallenge from "./hooks/conditional-rendering/07-user-challenge";
+import MultipleInputs from "./components/06-forms/03-multiple-inputs";
+import OtherInputs from "./components/06-forms/04-other-inputs";
 
 function App() {
   return (
@@ -26,7 +23,13 @@ function App() {
       {/* <ShortCircuitOverview /> */}
       {/* <ShortCircuitExamples /> */}
       {/* <ToggleChallenge /> */}
-      <List />
+      {/* <List /> */}
+
+      {/* forms  */}
+      {/* <ControlledInputs /> */}
+      {/* <UserChallenge /> */}
+      {/* <MultipleInputs /> */}
+      <OtherInputs />
     </div>
   );
 }
