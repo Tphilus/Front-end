@@ -1,5 +1,6 @@
 import MultipleInputs from "./components/06-forms/03-multiple-inputs";
 import OtherInputs from "./components/06-forms/04-other-inputs";
+import UseRefBasics from "./hooks/useRef/01-useRef-basics";
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
       {/* <ControlledInputs /> */}
       {/* <UserChallenge /> */}
       {/* <MultipleInputs /> */}
-      <OtherInputs />
+      {/* <OtherInputs /> */}
+      <UseRefBasics />
     </div>
   );
 }
