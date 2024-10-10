@@ -1,5 +1,7 @@
 import MultipleInputs from "./components/06-forms/03-multiple-inputs";
 import OtherInputs from "./components/06-forms/04-other-inputs";
+import ToggleExample from "./hooks/custom-hooks/01-toggle";
+import FetchData from "./hooks/custom-hooks/02-fetch-data";
 import UseRefBasics from "./hooks/useRef/01-useRef-basics";
 
 function App() {
@@ -31,7 +33,9 @@ function App() {
       {/* <UserChallenge /> */}
       {/* <MultipleInputs /> */}
       {/* <OtherInputs /> */}
-      <UseRefBasics />
+      {/* <UseRefBasics /> */}
+      {/* <ToggleExample /> */}
+      <FetchData />
     </div>
   );
 }
