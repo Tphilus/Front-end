@@ -4,3 +4,10 @@
 
 ## Birthday-Buddy Figma URL
 [Birthday Buddy](https://www.figma.com/file/e2vsLe9DMnXZIygNHkwGL1/Birthday-buddy?node-id=0%3A1&t=AGNWdO5QQGOoNCfD-1)
+
+# 02-tours
+![image](https://github.com/user-attachments/assets/eefe0f47-d7a9-4381-bc81-6d6fe4e1caec)
+![image](https://github.com/user-attachments/assets/963f28e1-4daf-42ed-835c-abba5dfe9cb7)
+
+## Figma URL
+[Tours](https://www.figma.com/file/OnLoM3AzBFaHzSc2iolJS0/Tours?node-id=0%3A1&t=wiRXOlTLN5ehekYI-1)
