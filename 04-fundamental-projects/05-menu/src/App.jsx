@@ -8,10 +8,11 @@ import Categories from "./components/Categories";
 // const tempSet = new Set(tempCategories);
 // const tempItems = ['all', ...tempSet]
 // console.log(tempItems);
-const allCategories = ["all", ...new Set(menu.map((item) => item.category))];
+const allCategories = ["all", ...new Set(menu.map((item) => item.category))]; // the all the category form the menu data and set it in an array
 const App = () => {
   const [menuItem, setMenuItem] = useState(menu);
   const [categories, setCategories] = useState(allCategories);
+
 
   const filterItems = (category) => {
     console.log(category);
@@ -19,7 +20,7 @@ const App = () => {
       setMenuItem(menu);
       return;
     }
-    const newItems = menu.filter((item) => item.category === category)
+    const newItems = menu.filter((item) => item.category === category) // filter them
     setMenuItem(newItems);
   }
 
