@@ -4,7 +4,6 @@ import { FaBars } from "react-icons/fa";
 
 const Home = () => {
   const { openSidebar, openModal } = useGlobalContext();
-  console.log(openModal);
 
   return (
     <main>
