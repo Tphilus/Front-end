@@ -4,7 +4,6 @@ import Sidebar from "./components/Sidebar";
 import Submenu from "./components/Submenu";
 
 const App = () => {
-
   return (
     <main>
       <Navbar />
