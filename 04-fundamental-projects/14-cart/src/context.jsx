@@ -14,14 +14,39 @@ const AppContext = createContext();
 
 const initialState = {
   loading: false,
-  cart: [...cartItems],
+  cart: new Map(cartItems.map((item) => [item.id, item])),
 };
 
 export const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const clearCart = () => {
+    dispatch({ type: CLEAR_CART });
+  };
+
+  const remove = (id) => {
+    dispatch({ type: REMOVE, payload: { id } });
+    // console.log(id);
+  };
+
+  const increase = (id) => {
+    dispatch({
+      type: INCREASE,
+      payload: { id },
+    });
+  };
+
+  const decrease = (id) => {
+    dispatch({
+      type: DECREASE,
+      payload: { id },
+    });
+  };
+
   return (
-    <AppContext.Provider value={{ ...state }}>{children}</AppContext.Provider>
+    <AppContext.Provider value={{ ...state, clearCart, remove, increase, decrease }}>
+      {children}
+    </AppContext.Provider>
   );
 };
 
