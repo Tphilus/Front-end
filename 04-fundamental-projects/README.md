@@ -43,6 +43,61 @@
 [Slider](https://www.figma.com/file/QfMzzThSYmgabSvn4t8Yfe/Slider?node-id=0%3A1&t=IpsYjMUn3Xj3Hs3N-1
 
 # 08-lorem ispuml
+![image](https://github.com/user-attachments/assets/be326496-6aaf-4d13-ba42-6674c5fbe442)
+![image](https://github.com/user-attachments/assets/92058e8e-1c8d-4618-9572-69168885debc)
 ## Figma URL
 
 [Lorem Ipsum](https://www.figma.com/file/JRDDc3aN6uiBS3yvjbkk0s/Lorem-ipsum?node-id=0%3A1&t=cLtQmBowNmb4V0jP-1)
+
+
+
+# 09-color generator
+![image](https://github.com/user-attachments/assets/efcc3b78-5cad-44ac-b631-8d51f420181b)
+![image](https://github.com/user-attachments/assets/6828e71f-81db-4a04-ad82-5ba1f521bc96)
+
+
+## Figma URL
+[Color generator](https://www.figma.com/file/P2SJ5QGOZvi49EOpoVTvsT/Color-generator?node-id=0%3A1&t=ZY2gnIJ9zGTSXPW8-1)
+
+
+# 10-grocery bud
+![image](https://github.com/user-attachments/assets/96303279-90f1-4023-a7ec-705afbfd25d4)
+![image](https://github.com/user-attachments/assets/c5e8b573-e2ce-4cb8-badc-75f6f60754d9)
+
+
+## Figma URL
+[Grocery Bud](https://www.figma.com/file/8rXGl68NoEmAhHpcV7aB5o/Grocery-bud?node-id=0%3A1&t=IMjjwDExGWpXdpQL-1)
+
+
+# 11-navbar
+![image](https://github.com/user-attachments/assets/e013a398-fd69-4796-b6d8-031c4f811ccb)
+![image](https://github.com/user-attachments/assets/7fccf0af-0198-4a30-8b24-e646df3fa930)
+
+## Figma URL
+[Navbar](https://www.figma.com/file/Se61eLfK50x0JatmdSdLzL/Navbar?node-id=0%3A1&t=iDQ4v9bsLeblAFUK-1)
+
+
+# 12-sidebar
+![image](https://github.com/user-attachments/assets/6f94a82d-c0cb-4887-9876-b667c8813c71)
+![image](https://github.com/user-attachments/assets/353682c8-9b73-4789-a320-3b0c73c25edc)
+
+# 13-stapi submenu
+![image](https://github.com/user-attachments/assets/fdbcfa4c-ea23-4443-b08f-4fb163bda7bf)
+![image](https://github.com/user-attachments/assets/d652bdbc-80f2-4f16-a565-48c32c3c8e75)
+
+
+## Figma URL
+[Strapi Submenus](https://www.figma.com/file/rXeU2gYTyKL2FrYmUNgv4r/Strapi-Submenus?node-id=0%3A1&t=Nx5H36ryj9ArZCI6-1)
+
+
+## Figma URL
+[Sidebar and Modal](https://www.figma.com/file/cFyEiRb6jQdVIVK9M5eoe6/Sidebar-and-modal?node-id=0%3A1&t=sg6VSjSNK3T1Uy8P-1)
+
+[Lorem Ipsum](https://www.figma.com/file/JRDDc3aN6uiBS3yvjbkk0s/Lorem-ipsum?node-id=0%3A1&t=cLtQmBowNmb4V0jP-1)
+# 14-cart
+![image](https://github.com/user-attachments/assets/49891930-9f56-45d9-bed5-23ad5da0c2f6)
+![image](https://github.com/user-attachments/assets/0ba7a486-31ef-4553-a563-058f4df11ae1)
+![image](https://github.com/user-attachments/assets/704e861d-7160-45b3-87c5-6a57e0118bfa)
+
+## Figma URL
+[Cart](https://www.figma.com/file/5AwKjnWuM6BhRYmxdQFpky/Cart?node-id=0%3A1&t=lfaO4zazTd7nqF1q-1)
