@@ -1,4 +1,4 @@
-#06-react-query
+# 06-react-query
 ![image](https://github.com/user-attachments/assets/733f7a0e-c4d3-4e50-a767-fe6179ac0496)
 ![image](https://github.com/user-attachments/assets/0a1c6ec0-de2c-41de-b62f-0486b38ca37e)
 
