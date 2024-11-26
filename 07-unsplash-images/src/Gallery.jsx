@@ -4,7 +4,11 @@ import { useGlobalContext } from "./context";
 
 const url =
   // "https://api.unsplash.com/search/photos?client_id=&query=office";
-  "https://api.unsplash.com/search/photos?client_id=Zyr_RJLrP7sr-cpZQKxO6vVq6MBg4ISpaKX9obO9qOI";
+  `https://api.unsplash.com/search/photos?client_id=${
+    import.meta.env.VITE_API_KEY
+  }`;
+console.log(import.meta.env.VITE_API_KEY);
+
 const Gallery = () => {
   const { searchTerm } = useGlobalContext();
   const { data, isLoading, isError } = useQuery({
