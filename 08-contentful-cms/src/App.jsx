@@ -1,4 +1,12 @@
+import Hero from "./Hero";
+import Project from "./Project";
+
 const App = () => {
-  return <h1>Contentful Starter</h1>;
+  return (
+    <>
+      <Hero />
+      <Project />
+    </>
+  );
 };
 export default App;
