@@ -329,6 +329,4 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
 export default ProjectsCard;
 ```
 
-#### Extra Challenge
 
-- setup projects in CMS
