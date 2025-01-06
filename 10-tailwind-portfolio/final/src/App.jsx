@@ -12,7 +12,6 @@ const App = () => {
       <Skills />
       <About />
       <Projects />
-<Team />
     </>
   );
 };
