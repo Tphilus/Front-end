@@ -34,7 +34,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
         {/* amount */}
         <p className="amount">{amount}</p>
         {/* decrease amount */}
-        <button
+        <buttoku 
           className="amount-btn"
           onClick={() => {
             if (amount === 1) {
@@ -45,7 +45,7 @@ const CartItem = ({ id, img, title, price, amount }) => {
           }}
         >
           <ChevronDown />
-        </button>
+        </buttoku>
       </div>
     </article>
   );
