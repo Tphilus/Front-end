@@ -1,5 +1,9 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import cartItems from "../../cartItems";
+import axios from "axios";
+import { openModal } from "../modal/modalSlice";
+
+const url = "https://www.course-api.com/react-useReducer-cart-project";
 
 const initialState = {
   //   cartItem: [],
@@ -8,6 +12,27 @@ const initialState = {
   total: 0,
   isLoading: true,
 };
+
+// export const getCartItems = createAsyncThunk("cart/getCartItems", () => {
+//   return fetch(url)
+//     .then((resp) => resp.json())
+//     .catch((err) => console.log(err));
+// });
+
+export const getCartItems = createAsyncThunk("cart/getCartItems", async (name, thunkAPI) => {
+  try {
+    // console.log(name);
+    // console.log(thunkAPI);
+    // console.log(thunkAPI.getState());
+    // thunkAPI.dispatch(openModal())
+    
+    const resp = await axios(url);
+    return resp.data;
+  } catch (error) {
+    // console.log(error);
+   return thunkAPI.rejectWithValue('Something want wrong')
+  }
+});
 
 const cartSlice = createSlice({
   name: "cart",
@@ -40,9 +65,39 @@ const cartSlice = createSlice({
       state.total = total;
     },
   },
+  extraReducers: (builder) => {
+    builder.addCase(getCartItems.pending, (state) => {
+      state.isLoading = true;
+    }).addCase(getCartItems.fulfilled, (state, action) => {
+      // the action will contain the "resp" result
+      console.log(action);
+      state.isLoading = false;
+      state.cartItems = action.payload;
+    }).addCase(getCartItems.rejected, (state, action) => {
+      // console.log(action); 
+      state.isLoading = false;
+    })
+  },
+  // extraReducers: {
+  //   [getCartItems.pending]: (state) => {
+  //     state.isLoading = true;
+  //   },
+  //   [getCartItems.fulfilled]: (state, action) => {
+  //     // the action will contain the "resp" result
+  //     console.log(action);
+  //     state.isLoading = false;
+  //     state.cartItems = action.payload;
+  //   },
+  //   [getCartItems.rejected]: (state, action) => {
+  //     // console.log(action);
+      
+  //     state.isLoading = false;
+  //   },
+  // },
 });
 
 // console.log(cartSlice);
-export const { clearCart, removeItem, increase, decrease, calculateTotal } = cartSlice.actions;
+export const { clearCart, removeItem, increase, decrease, calculateTotal } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;
