@@ -1,7 +1,8 @@
 import React from "react";
+import { Hero } from "../components";
 
 const Landing = () => {
-  return <div className=" text-4xl">Landing</div>;
+  return <Hero />;
 };
 
 export default Landing;

@@ -1,7 +1,17 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
+import { Header, Navbar } from "../components";
 
 const HomeLayout = () => {
-  return <div className=" text-4xl">HomeLayout</div>;
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <section className="align-element py-20">
+        <Outlet />
+      </section>
+    </>
+  );
 };
 
 export default HomeLayout;

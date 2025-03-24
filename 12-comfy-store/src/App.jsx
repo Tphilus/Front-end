@@ -12,6 +12,7 @@ import {
   Register,
   SingleProduct,
 } from "./pages";
+import { ErrorElement } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -22,29 +23,30 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Landing />,
+        errorElement: <ErrorElement />,
       },
       {
-        index: "products",
+        path: "products",
         element: <Products />,
       },
       {
-        index: "products/:id",
+        path: "products/:id",
         element: <SingleProduct />,
       },
       {
-        index: "cart",
+        path: "cart",
         element: <Cart />,
       },
       {
-        index: "about",
+        path: "about",
         element: <About />,
       },
       {
-        index: "checkout",
+        path: "checkout",
         element: <Checkout />,
       },
       {
-        index: "orders",
+        path: "orders",
         element: <Orders />,
       },
     ],
