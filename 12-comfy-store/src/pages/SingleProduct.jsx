@@ -20,9 +20,20 @@ const SingleProduct = () => {
   const handleAmount = (e) => {
     setAmount(parseInt(e.target.value));
   };
+
+  const generateAmountOption = (number) => {
+    return Array.from({ length: number }, (_, index) => {
+      const amount = index + 1;
+      return (
+        <option key={amount} value={amount}>
+          {amount}
+        </option>
+      );
+    });
+  };
+
   return (
     <section>
-      l
       <div className="text-md breadcrumbs ">
         <ul>
           <li>
@@ -84,9 +95,10 @@ const SingleProduct = () => {
               value={amount}
               onChange={handleAmount}
             >
-              <option value={1}>1</option>
+              {/* <option value={1}>1</option>
               <option value={2}>2</option>
-              <option value={3}>3</option>
+              <option value={3}>3</option> */}
+              {generateAmountOption(20)}
             </select>
           </div>
           {/* CART BTN  */}
