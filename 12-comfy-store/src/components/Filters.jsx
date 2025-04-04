@@ -39,7 +39,11 @@ const Filters = () => {
       {/* PRICE  */}
       <FormRange name="price" label="select price" size="range-sm" />
       {/* SHIPPING  */}
-      <FormCheckbox name='shipping' label="free shipping" size="checkbox-size" />
+      <FormCheckbox
+        name="shipping"
+        label="free shipping"
+        size="checkbox-size"
+      />
       {/* BUTTONS  */}
       <button type="submit" className="btn btn-primary btn-sm uppercase">
         search
