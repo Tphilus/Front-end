@@ -3,6 +3,13 @@ import { customFetch } from "../utils";
 const url = "/products";
 
 export const loader = async ({ request }) => {
+  // const params = new URL(request.url).searchParams;
+  // const search = params.get("search");
+
+  const params = Object.fromEntries([
+    ...new URL(request.url).searchParams.entries()
+  ])
+
   const response = await customFetch(url);
   // console.log(response.data.data);
   const products = response.data.data;
