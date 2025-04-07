@@ -10,11 +10,13 @@ export const loader = async ({ request }) => {
     ...new URL(request.url).searchParams.entries()
   ])
 
-  const response = await customFetch(url);
+  const response = await customFetch(url, {
+    params
+  });
   // console.log(response.data.data);
   const products = response.data.data;
   const meta = response.data.meta;
-  return { products, meta };
+  return { products, meta, params };
 };
 
 const Products = () => {
