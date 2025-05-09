@@ -1,7 +1,11 @@
 import React from 'react'
 
-export const CartList = () => {
+const CartList = () => {
   return (
-    <div>CartList</div>
+    <div>
+      CartList
+    </div>
   )
 }
+
+export default CartList
