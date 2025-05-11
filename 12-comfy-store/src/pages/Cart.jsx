@@ -17,9 +17,6 @@ const Cart = () => {
         <div className="lg:col-span-8">
           <CartItemsList />
         </div>
-        <div className="lg:col-span-8">
-          <CartItemsList />
-        </div>
         <div className="lg:col-span-4 lg:pl-4">
           <CartTotals />
           {user ? (
