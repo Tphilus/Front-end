@@ -13,7 +13,7 @@ import { toast } from "react-toastify";
 // };
 
 const initialState = {
-  user: { username: "coding addict" },
+  user: { username: "Tphilus" },
 //   theme: getThemeFromLocalStorage(),
 };
 
@@ -24,8 +24,10 @@ const userSlice = createSlice({
     loginUser: (state, action) => {
       console.log("login");
     },
-    logoutUser: (state, action) => {
-      console.log("logout");
+    logoutUser: (state) => {
+      state.user = null;
+      localStorage.removeItem("user");
+      toast.success('Logged out successfully')
     },
     toggleTheme: (state) => {
       const { dracula, winter } = themes;

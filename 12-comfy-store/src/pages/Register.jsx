@@ -1,6 +1,25 @@
 import React from "react";
-import { Form, Link } from "react-router-dom";
+import { Form, Link, redirect } from "react-router-dom";
 import { FormInput, SubmitBtn } from "../components";
+import { customFetch } from "../utils";
+import { toast } from "react-toastify";
+
+export const action = async ({ request }) => {
+  const formData = await request.formData();
+  const data = Object.fromEntries(formData);
+
+  try {
+    const response = await customFetch.post("auth/local/register", data);
+    toast.success("account created successfully");
+    return redirect("/login");
+  } catch (error) {
+    const errorMessage =
+      error?.response?.data?.error?.message ||
+      "please double check your credentials";
+      toast.error(errorMessage)
+    return null;
+  }
+};
 
 const Register = () => {
   return (
@@ -14,14 +33,16 @@ const Register = () => {
           type="text"
           label="Username"
           name="username"
-          defaultValue=""
         />
-        <FormInput type="email" label="Email" name="email" defaultValue="" />
+        <FormInput
+          type="email"
+          label="Email"
+          name="email"
+        />
         <FormInput
           type="password"
           label="Password"
           name="password"
-          defaultValue=""
         />
 
         <div className="mt-4 ">
