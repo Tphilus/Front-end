@@ -1,8 +1,52 @@
 import React from "react";
-import { Form, Link } from "react-router-dom";
+import { Form, Link, redirect, useNavigate } from "react-router-dom";
 import { FormInput, SubmitBtn } from "../components";
+import { customFetch } from "../utils";
+import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { loginUser } from "../features/user/userSlice";
+
+export const action =
+  (store) =>
+  async ({ request }) => {
+    const formData = await request.formData();
+    const data = Object.fromEntries(formData);
+
+    try {
+      const response = await customFetch.post("/auth/local", data);
+      store.dispatch(loginUser(response.data));
+
+      toast.success("logged in successfully");
+      return redirect("/");
+      // return null;
+    } catch (error) {
+      const errorMessage =
+        error?.response?.data?.error?.message ||
+        "please double check your credentials";
+      toast.error(errorMessage);
+      return null;
+    }
+  };
 
 const Login = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const loginAsGustUser = async () => {
+    try {
+      const response = await customFetch.post("/auth/local", {
+        identifier: "mytest@gmail.com",
+        password: "mytest",
+      });
+      dispatch(loginUser(response.data));
+      toast.success("welcome guest user");
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+      toast.error("guest user login error. please try again");
+    }
+  };
+
   return (
     <section className="h-screen grid place-items-center">
       <Form
@@ -14,18 +58,20 @@ const Login = () => {
           type="email"
           label="Email"
           name="identifier"
-          defaultValue="test@gmail.com"
         />
         <FormInput
           type="password"
           label="Password"
           name="password"
-          defaultValue="secret"
         />
         <div className="mt-4 ">
           <SubmitBtn text="Login" />
         </div>
-        <button type="button" className="btn btn-secondary btn-block uppercase">
+        <button
+          type="button"
+          className="btn btn-secondary btn-block uppercase"
+          onClick={loginAsGustUser}
+        >
           {" "}
           gust user{" "}
         </button>
