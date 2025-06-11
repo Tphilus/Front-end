@@ -28,3 +28,26 @@ console.log(greeting, age, isAdault);
 // greeting = 10
 // age = "thirty"
 // isAdault = 'yes'
+
+interface objectItems {
+    id: number;
+    name: string;
+    isActive: boolean;
+}
+
+const john: objectItems = {
+    id: 1,
+    name: "Hello",
+    isActive: false,
+}
+
+interface UserIterface {
+    id: number;
+    name: string;
+    isActive: boolean;
+}
+
+function createUser(user: UserIterface): UserIterface {
+    return user
+}
+

@@ -33,3 +33,14 @@ orderStatus = 'processing';
 // 2. Discount 
 let discount: number | string = 20;
 discount = '20%'
+
+function processInput(input: string | number) {
+  if (typeof input === "number") {
+    console.log(input * 2);
+  } else {
+    console.log(input.toLocaleLowerCase());
+  }
+}
+
+console.log(processInput("Hello"));
+
