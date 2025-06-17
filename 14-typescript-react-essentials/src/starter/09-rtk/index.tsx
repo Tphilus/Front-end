@@ -13,7 +13,7 @@ function Component() {
         <button onClick={() => dispatch(increment())} className="btn">
           Increment
         </button>
-        <button onClick={() => dispatch(decrement())} className="btn">
+        <button onClick={() => dispatch(decrement())} className="btn">.      
           Decrement
         </button>
         <button onClick={() => dispatch(reset())} className="btn">
