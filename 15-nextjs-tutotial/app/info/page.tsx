@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+export default function Info() {
   return (
     <div>
       <h1 className=" text-7xl" >HomPage</h1>
-      <Link href='/about' >About </Link>
+      <Link href='/info/contact' >Contact </Link>
     </div>
   );
 }
