@@ -18,11 +18,11 @@ export const createUser = async (formData: FormData) => {
   revalidatePath('/actions');
 };
 
-export const fetchUsers = async (): Promise<User[]> => {
-  const result = await readFile('users.json', { encoding: 'utf8' });
-  const users = result ? JSON.parse(result) : [];
-  return users;
-};
+// export const fetchUsers = async (): Promise<User[]> => {
+//   const result = await readFile('users.json', { encoding: 'utf8' });
+//   const users = result ? JSON.parse(result) : [];
+//   return users;
+// };
 
 const saveUser = async (user: User) => {
   const users = await fetchUsers();
