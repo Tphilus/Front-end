@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { LuShoppingCart } from "react-icons/lu";
 
 export default function CartButton() {
   // temp
@@ -13,6 +14,7 @@ export default function CartButton() {
       className=" flex justify-center items-center relative shadow-none "
     >
       <Link href="/cart">
+      <LuShoppingCart />
         <span className=" absolute -top-3 -right-3 bg-primary text-white rounded-full h-6 w-6 flex items-center justify-center text-xs ">
           {numItemsInCArt}
         </span>
