@@ -18,7 +18,7 @@ export default function LinksDropdown() {
           <LuAlignLeft className=" w-6 h-6" />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className=" w-40 bg-white shadow-2xl rounded-md" align="start" sideOffset={10} >
+      <DropdownMenuContent className=" w-40 shadow-2xl rounded-md" align="start" sideOffset={10} >
         {links.map((link) => {
           return (
             <DropdownMenuItem key={link.href} className="" >

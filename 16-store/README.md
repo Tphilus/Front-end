@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 };
 ```
 
-- get a hold of the README.MD
+- get a hold of the README.MDp]
 
 ### Create Pages
 
